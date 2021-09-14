@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<style>
+html {
+	border: 0;
+}
+
+body {
+	background-color: #1E1E1E;
+	color: white;
+	font-family: Consolas;
+}
+
+h1 {
+	color: #CE8349;
+	text-align: center;
+}
+
+h2 {
+	color: #CE8349;
+	margin: 50px 15px;
+}
+
+b {
+	color: #4FB8FE;
+}
+
+.red-color-text {
+	color: red;
+}
+</style>
+
+</head>
+<body>
+
+	<h1>Règles du jeu</h1>
+
+	<h2>Caractéristiques du jeu</h2>
+	<p>
+		Ce jeu est un jeu de bataille navale mobile. Où le joueur affrontera
+		l'ordinateur. Le joueur dispose de <b>deux grilles de 15*15 cases.</b>
+	</p>
+	<ul>
+		<li>Une grille pour visualiser et selectionner ses navires;</li>
+		<li>Une grille pour viser et visualiser les dégâts causés à
+			l'adversaire.</li>
+	</ul>
+
+	<h2>Caractéristique des navires</h2>
+	<p>
+		La flotte du joueur est composée de <b>10 navires :</b>
+	</p>
+	<ul>
+		<li>4 sous-marins (1 case)</li>
+		<li>3 destroyers (3 cases)</li>
+		<li>2 croiseurs (5 cases)</li>
+		<li>1 cuirassé (7 cases)</li>
+	</ul>
+
+	<p>Chaque navire occupe un nombre de cases (indiqué au dessus) et
+		une puissance de tir différente.</p>
+	<ul>
+		<li>Les sous-marins et les destroyers possédent une <b>puissance
+				de 1 case;</b></li>
+		<li>Les croiseurs possédent une <b>puissance de 4 cases;</b></li>
+		<li>Les cuirassés possédent une <b>puissance de 9 cases.</b></li>
+	</ul>
+
+
+	<p>
+		De plus, les navires sont positionnés aléatoirement dans la grille au
+		début de chaque partie et c'est <b>toujours</b> le joueur qui démarre
+		la partie. <br> Chaque joueur (humain et ordinateur) joue à tour
+		de rôle et peuvent réaliser 2 actions distinctes: <br>
+	</p>
+
+	<ol>
+		<li>Tirer : <br> Le joueur sélectionne un navire dans sa
+			grille et choisi les coordonnées d'une case dans la grille de
+			l'adversaire. <br> Si les coordonnées choisies sont occuppées
+			par un navire enemmi, la case devient <b class="red-color-text">rouge</b>,
+			le navire adversaire ne pourra plus de déplacer. <br>
+			Finalement, si toutes les cases d'un navire sont touchées alors celui
+			ci coule et ne peut plus tirer.
+		</li>
+		<br>
+		<li>Déplacer : <br> Le joueur sélectionne un navire dans sa
+			grille et choisi une direction de mouvement grace aux quatre boutons
+			sur l'écran. <br> Si le mouvement est possible <b>(pas
+				d'obstacles, ni bords de la grille)</b> le navire effectuera le
+			déplacement d'une case. <br>
+		</li>
+	</ol>
+
+
+
+</body>
+</html>
+

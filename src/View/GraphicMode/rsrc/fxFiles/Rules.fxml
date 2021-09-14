@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<TabPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GraphicMode.View">
+  <tabs>
+    <Tab text="Règles">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="896.0" layoutY="722.0" maxHeight="35.0" maxWidth="75.0" minHeight="35.0" minWidth="75.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="35.0" prefWidth="75.0" styleClass="button1" text="MENU" />
+                  <WebView fx:id="webViewRules" layoutX="14.0" layoutY="14.0" prefHeight="696.0" prefWidth="971.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Touches">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="896.0" layoutY="722.0" maxHeight="35.0" maxWidth="75.0" minHeight="35.0" minWidth="75.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="35.0" prefWidth="75.0" styleClass="button1" text="MENU" />
+                  <WebView fx:id="webViewKeys" layoutX="14.0" layoutY="14.0" prefHeight="691.0" prefWidth="972.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

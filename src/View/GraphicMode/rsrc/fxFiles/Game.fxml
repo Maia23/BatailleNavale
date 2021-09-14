@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GraphicMode.View">
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="leftButton" layoutX="58.0" layoutY="108.0" maxHeight="30.0" maxWidth="55.0" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#handleMouvement" prefHeight="30.0" prefWidth="55.0" styleClass="mouvementButton" text="LEFT" textFill="WHITE" />
+            <Button fx:id="upButton" layoutX="134.0" layoutY="63.0" maxHeight="30.0" maxWidth="55.0" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#handleMouvement" prefHeight="30.0" prefWidth="55.0" styleClass="mouvementButton" text="UP" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font></Button>
+            <Button fx:id="downButton" layoutX="134.0" layoutY="108.0" maxHeight="30.0" maxWidth="55.0" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#handleMouvement" prefHeight="30.0" prefWidth="55.0" styleClass="mouvementButton" text="DOWN" textFill="#f8f8f8" />
+            <Button fx:id="rightButton" layoutX="207.0" layoutY="108.0" maxHeight="30.0" maxWidth="55.0" minHeight="30.0" minWidth="55.0" mnemonicParsing="false" onAction="#handleMouvement" prefHeight="30.0" prefWidth="55.0" styleClass="mouvementButton" text="RIGHT" textFill="WHITE" />
+            <Button fx:id="fireButton" layoutX="300.0" layoutY="78.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="200.0" mnemonicParsing="false" onAction="#handleFireAction" prefHeight="30.0" prefWidth="200.0" styleClass="mouvementButton" text="FIRE" textFill="#e81313">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ScrollPane fx:id="consolePane" hbarPolicy="NEVER" layoutX="532.0" layoutY="16.0" prefHeight="171.0" prefWidth="446.0">
+               <content>
+                  <TextFlow fx:id="console" prefHeight="169.0" prefWidth="431.0" styleClass="console" />
+               </content>
+               <styleClass>
+                  <String fx:value="console" />
+                  <String fx:value="consolePane" />
+               </styleClass>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="mainTitle" fill="#67cdfe" layoutX="190.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BATAILLE NAVALE" textAlignment="CENTER" wrappingWidth="655.123046875">
+               <font>
+                  <Font name="Agency FB" size="62.0" />
+               </font>
+            </Text>
+            <Text fill="#31a4da" layoutX="184.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1" textAlignment="CENTER" wrappingWidth="123.7421875">
+               <font>
+                  <Font name="Agency FB" size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#31a4da" layoutX="673.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPU" textAlignment="CENTER" wrappingWidth="123.7421875">
+               <font>
+                  <Font name="Agency FB" size="34.0" />
+               </font>
+            </Text>
+            <Button fx:id="returnToMenuBtn" layoutX="61.0" layoutY="41.0" mnemonicParsing="false" onAction="#returnMenu" styleClass="button1" text="MENU" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="soundButton" layoutX="885.0" layoutY="45.0" mnemonicParsing="false" onAction="#changeSoundStatus" prefHeight="37.0" prefWidth="38.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <styleClass>
+                  <String fx:value="soundButton" />
+                  <String fx:value="button1" />
+               </styleClass>
+            </Button>
+            <Button fx:id="saveGameBtn" layoutX="759.0" layoutY="43.0" mnemonicParsing="false" onAction="#saveGame" prefHeight="35.0" styleClass="button1" text="SAVE" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Text fx:id="victoryText" strokeType="OUTSIDE" strokeWidth="0.0" text="YOU WON !" wrappingWidth="183.99373817443848" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

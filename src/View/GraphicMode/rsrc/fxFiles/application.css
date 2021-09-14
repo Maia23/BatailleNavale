@@ -1,0 +1,178 @@
+#mainWindow {
+	-fx-background-color: #404040;
+}
+
+#main-title {
+	-fx-font: 80px "Bradley Hand ITC";
+}
+
+#gameBoard {
+	-fx-padding: 80;
+}
+
+.console {
+	-fx-background-color: #1E1E1E;
+	-fx-background-radius: 6, 5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+	-fx-background-color: #404040;
+}
+
+.scroll-pane>.viewport {
+	-fx-background-color: transparent;
+}
+
+.empty {
+	-fx-fill: rgb(63, 67, 74);
+	-fx-stroke: rgb(0, 0, 0);
+}
+/**/
+.B {
+	-fx-fill: #4FB8FE;
+}
+
+.C {
+	-fx-fill: #2C7AD6;
+}
+
+.D {
+	-fx-fill: #B881E0;
+}
+
+.S {
+	-fx-fill: #8CE08F;
+	/*-fx-arc-height: 10;
+	-fx-arc-width: 10;*/
+}
+
+.selected {
+	-fx-fill: #5dfa48;
+}
+
+.target {
+	-fx-fill: #5dfa48;
+}
+
+.X {
+	-fx-fill: red;
+}
+
+.level2 {
+	-fx-font-weight: bold;
+	-fx-fill: white;
+}
+
+.level3 {
+	-fx-fill: red;
+}
+
+.soundButton {
+	-fx-background-image: url("../icons/soundOn.png");
+	-fx-background-size: 30px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: 90%;
+}
+
+.soundButtonOff {
+	-fx-background-image: url("../icons/soundOff.png");
+}
+
+.button1 {
+	-fx-background-color: linear-gradient(#f0ff35, #a9ff00),
+		radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+	-fx-background-radius: 6, 5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+	-fx-text-fill: #395306;
+}
+
+.mouvementButton {
+	-fx-background-color: #090a0c,
+		linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+		linear-gradient(#20262b, #191d22),
+		radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9),
+		rgba(255, 255, 255, 0));
+	-fx-background-radius: 5, 4, 3, 5;
+	-fx-background-insets: 0, 1, 2, 0;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#fireButton {
+	-fx-text-fill: red;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+	-fx-opacity: 0;
+}
+
+.tab-pane {
+	-fx-tab-min-width: 90px;
+}
+
+.tab {
+	-fx-background-insets: 0 1 0 1, 0, 0;
+	-fx-pref-width: 100;
+	-fx-pref-height: 32;
+	-fx-background-radius: 6, 5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0.0, 0, 1);
+}
+
+.tab-pane .tab {
+	-fx-background-color: #1E1E1E;
+}
+
+.tab .tab-label {
+	-fx-alignment: CENTER;
+	-fx-text-fill: #4FB8FE;
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+	-fx-alignment: CENTER;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+
+.text-area {
+	-fx-background-color: linear-gradient(#f0ff35, #a9ff00),
+		radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+	-fx-text-fill: black;
+}
+
+.text-area .content {
+	-fx-background-color: #949494;
+}
+
+.tab-pane .tab:selected {
+	-fx-background-color: linear-gradient(#f0ff35, #a9ff00),
+		radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+}
+
+.hyperlink {
+	-fx-border-color: transparent;
+	-fx-padding: 4 0 4 0;
+}
+
+.hyperlink .visited {
+	-fx-text-fill: white;
+}
+
+.hyperlink:hover {
+	-fx-text-fill: #606060;
+	-fx-font-weight: bold;
+}
+
+
+.endGamePanel {
+	-fx-background-image:url("../icons/finalImage.jpg");
+}
+
+.flared {
+	-fx-fill: #eb9534;
+}
